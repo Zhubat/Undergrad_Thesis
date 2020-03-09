@@ -1,0 +1,41 @@
+MODULE FanMod
+    
+    CONST robtarget Target_10:=[[400,-75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[400,75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[430,75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[430,-75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[460,-75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60:=[[460,75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_70:=[[490,75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_80:=[[490,-75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_90:=[[520,-75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100:=[[520,75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110:=[[550,75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_120:=[[550,-75,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+	
+    PERS tooldata tExtruder:=[TRUE,[[-92.3257,2.14224,443.917],[1,0,0,0]],[0.5,[0,80,5],[1,0,0,0],0,0,0]];
+    
+    PROC Fan_Extruder() !Change this to suit.
+        
+		MoveJ [[350,0,-300],[0,0,-1,0],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]], v200, z50, tExtruder;
+		MoveL [[400,-50,-300],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]], v60, z50, tExtruder;
+        MoveL Target_10,v60,fine,tExtruder\WObj:=wobj0;
+        
+        Stop; 
+            
+            MoveL Target_20,v50,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_30,v50,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_40,v60,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_50,v60,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_60,v80,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_70,v80,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_80,v100,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_90,v100,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_100,v150,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_110,v150,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_120,v200,fine,tExtruder\WObj:=wobj0;
+        Stop;
+        MoveJ [[450,0,-100],[0,0,-1,0],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]], v200, z50, tExtruder;
+	ENDPROC
+    
+ENDMODULE

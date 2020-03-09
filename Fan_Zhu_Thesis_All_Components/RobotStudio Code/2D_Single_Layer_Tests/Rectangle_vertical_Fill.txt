@@ -1,0 +1,85 @@
+MODULE FanMod
+	CONST robtarget Target_10:=[[441.25,39,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[407.75,39,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[407.75,33.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[441.25,33.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[441.25,28,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60:=[[407.75,28,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_70:=[[407.75,22.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_80:=[[441.25,22.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_90:=[[441.25,17,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100:=[[407.75,17,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110:=[[407.75,11.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_120:=[[441.25,11.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_130:=[[441.25,6,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_140:=[[407.75,6,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_150:=[[407.75,0.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_160:=[[441.25,0.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_170:=[[441.25,-5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_180:=[[407.75,-5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_200:=[[441.25,-10.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_190:=[[407.75,-10.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_210:=[[441.25,-16,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_220:=[[407.75,-16,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_230:=[[407.75,-21.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_240:=[[441.25,-21.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_250:=[[441.25,-27,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_260:=[[407.75,-27,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_270:=[[407.75,-32.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_280:=[[441.25,-32.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_290:=[[441.25,-38,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_300:=[[407.75,-38,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_310:=[[407.75,-44.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_320:=[[447.25,-44.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_330:=[[447.25,44.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_340:=[[402.75,44.5,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_350:=[[402.75,-50,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_360:=[[447.25,-50,-387],[0,0,-1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+	
+    PERS tooldata tExtruder:=[TRUE,[[-92.3257,2.14224,443.917],[1,0,0,0]],[0.5,[0,80,5],[1,0,0,0],0,0,0]];
+    
+    PROC Fan_Extruder() !Change this to suit.
+        
+		MoveJ [[350,0,-300],[0,0,-1,0],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]], v200, z50, tExtruder;
+	    MoveL Target_10,v50,fine,tExtruder\WObj:=wobj0;
+        Stop; 
+            MoveL Target_20,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_30,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_40,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_50,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_60,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_70,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_80,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_90,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_100,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_110,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_120,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_130,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_140,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_150,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_160,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_170,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_180,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_190,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_200,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_210,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_220,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_230,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_240,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_250,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_260,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_270,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_280,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_290,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_300,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_310,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_320,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_330,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_340,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_350,v40,fine,tExtruder\WObj:=wobj0;
+            MoveL Target_360,v40,fine,tExtruder\WObj:=wobj0;
+        Stop;
+        MoveJ [[450,0,-100],[0,0,-1,0],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]], v200, z50, tExtruder;
+	ENDPROC
+    
+ENDMODULE
